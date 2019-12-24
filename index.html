@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>RockPaperScissorsGame</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="JS/css/style.css">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="core.js"></script>
+</head>
+<body>
+    <div class="should-blur">
+        <header>
+            <img id="logo" src="https://cdn.leadx.org/wp-content/uploads/2017/07/rock-paper-scissors-156171_960_720-696x687.png" alt="logo" title="Home~refresh">
+            <h1><p class="">Rock Paper Scissors</p></h1>
+        </header>
+        <hr>
+        <main>
+            <div class="buttonBlock">
+                <button class="myButtons" id="rock"><img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/raised-fist.png" alt=""></button>
+                <button class="myButtons" id="paper"><img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/raised-hand.png" alt=""></button>
+                <button class="myButtons" id="scissors"><img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/victory-hand.png" alt=""></button>
+
+            </div>
+            <hr>
+            <div class="status">
+                <div class="statusNameDiv">
+                    <span class="statusName">Times you have played</span>
+                    <span class="statusName">Wins</span>
+                    <span class="statusName">Loses</span>
+                    <span class="statusName">Draw</span>
+                </div>
+                <div class="statusNumDiv">
+                    <span class="statusNumber" id="timesPlayed">0</span>
+                    <span class="statusNumber" id="wins">0</span>
+                    <span class="statusNumber" id="losses">0</span>
+                    <span class="statusNumber" id="draw">0</span>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p id="intro">I am a pre-intermediate web developer trying to implement the codes from low-level to high-level programming languages. Feel free to contact me to join the journey of happy coding:-).  </p>
+                <div class="name1">
+                    <u>Ilkhom Kobilov</u>
+                </div>
+        </footer>
+    </div>
+
+    <div class="modal-win">
+        <div class="modal-header">
+            <button class="close-win-modal-btn">
+                <img src="https://img.icons8.com/color/96/000000/close-window.png" title="Close">
+            </button>
+        </div>
+        <div class="modal-main">
+            <h1 class="txt">Win</h1>
+        </div>
+        <div class="modal-footer">
+            <h2 id="win-summary">
+            </h2>
+        </div>
+    </div>
+    <div class="modal-lose">
+        <div class="modal-header">
+            <button class="close-lose-modal-btn">
+                <img src="https://img.icons8.com/color/96/000000/close-window.png" title="Close">
+            </button>
+        </div>
+        <div class="modal-main">
+            <h1 class="txt">Lose</h1>
+        </div>
+        <div class="modal-footer">
+            <h2 id="lose-summary">
+            </h2>
+        </div>
+    </div>
+    <div class="modal-draw">
+        <div class="modal-header">
+            <button class="close-draw-modal-btn">
+                <img src="https://img.icons8.com/color/96/000000/close-window.png" title="Close">
+            </button>
+        </div>
+        <div class="modal-main">
+            <h1 class="txt">Draw</h1>
+        </div>
+        <div class="modal-footer">
+            <h2 id="draw-summary">
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
